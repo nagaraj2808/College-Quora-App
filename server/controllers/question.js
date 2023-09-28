@@ -10,7 +10,7 @@ export const createQuestion = async (req, res) => {
     try {
         const oldQuestion = await UserModal.findOne({ question: question });
         if (oldQuestion) res.status(400).json({ message: "Question already exist" });
-        const newQuestion = new Question({ author: id, question: question, createdAt: new Date().toDateString() });
+        const newQuestion = new Question({ creatorId: id, question: question, createdAt: new Date().toDateString() });
 
         const data = await newQuestion.save()
         res.status(200).json(data);
