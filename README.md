@@ -5,7 +5,7 @@ Make sure mongodb and node.js is installed in your system
 ```env
 SERVER_URL=http://localhost:4000/
 SERVER_PORT=4000
-DB_URL=mongodb://127.0.0.1:27017/SomeDB
+DB_URL=mongodb://127.0.0.1:27017/CQHub
 SECRET=THISISTHEBIGGESTSECRET
 ```
 
